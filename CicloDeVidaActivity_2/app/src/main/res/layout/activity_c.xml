@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CC0000"
+    tools:context="br.usjt.ciclodevidaactivity_2.ActivityC"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="376dp"
+        android:layout_height="66dp"
+        android:gravity="center_horizontal"
+        android:textSize="44sp"
+        android:paddingBottom="16dp"
+        android:textColor="#FAAFAF"
+        android:text="@string/activity_c_label"
+        tools:layout_editor_absoluteX="5dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:layout_weight="0.42">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="90dp"
+            android:layout_height="47dp"
+            android:onClick="startActivityA"
+            android:text="@string/btn_start_a_label"
+            tools:layout_editor_absoluteX="5dp"
+            tools:layout_editor_absoluteY="84dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignBottom="@+id/button4" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="90dp"
+            android:layout_height="48dp"
+            android:onClick="startActivityB"
+            android:text="@string/btn_start_b_label"
+            tools:layout_editor_absoluteX="96dp"
+            tools:layout_editor_absoluteY="84dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/button" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="109dp"
+            android:layout_height="48dp"
+            android:onClick="finishActivityC"
+            android:text="@string/btn_finish_c_label"
+            tools:layout_editor_absoluteX="186dp"
+            tools:layout_editor_absoluteY="84dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/button2" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="84dp"
+            android:layout_height="50dp"
+            android:onClick="startDialog"
+            android:text="@string/btn_start_dialog_label"
+            tools:layout_editor_absoluteX="297dp"
+            tools:layout_editor_absoluteY="84dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/button3" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="375dp"
+        android:layout_height="43dp"
+        android:layout_alignStart="@+id/button4"
+        android:layout_below="@+id/button2"
+        android:textColor="#FAAFAF"
+        android:text="@string/lifecycle_method_list"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="158dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+
+        <TextView
+            android:id="@+id/status_view_c"
+            android:layout_width="372dp"
+            android:layout_height="101dp"
+            tools:layout_editor_absoluteX="9dp"
+            tools:layout_editor_absoluteY="199dp"
+            android:padding="4dp"
+            android:typeface="monospace"
+            android:background="#FFFFFF"
+            android:textColor="#000000" />
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="378dp"
+        android:layout_height="32dp"
+        android:textSize="24sp"
+        android:textColor="#FAAFAF"
+        android:text="@string/activity_status"
+        tools:layout_editor_absoluteY="322dp"
+        tools:layout_editor_absoluteX="5dp" />
+
+    <TextView
+        android:id="@+id/status_view_all_c"
+        android:layout_width="377dp"
+        android:layout_height="95dp"
+        tools:layout_editor_absoluteY="365dp"
+        tools:layout_editor_absoluteX="6dp"
+        android:padding="4dp"
+        android:typeface="monospace"
+        android:background="#FFFFFF"
+        android:textColor="#000000" />
+
+</LinearLayout>
