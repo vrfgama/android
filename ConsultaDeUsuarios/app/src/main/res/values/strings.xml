@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ConsultaDeUsuarios</string>
+    <string name="entrar">Entrar</string>
+    <string name="buscar">Buscar</string>
+    <string name="login">Login: 1234</string>
+    <string name="senha">Senha: 4321</string>
+</resources>
